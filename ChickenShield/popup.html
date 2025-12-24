@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChickenShield</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="icons/icon48.png" alt="Shield" id="logo-img">
+        <h1>ChickenShield</h1>
+      </div>
+      <div id="status-badge" class="badge">WAITING</div>
+    </header>
+
+    <!-- Main Score Area -->
+    <div class="score-card">
+      <div id="risk-score-circle" class="circle">
+        <span id="risk-score-val">--</span>
+        <span class="label">Risk Score</span>
+      </div>
+      <h2 id="verdict-text">Waiting for data...</h2>
+    </div>
+
+    <!-- Details -->
+    <div class="details">
+      <p id="explanation">Open an email or visit a site to scan.</p>
+
+      <div class="indicators">
+        <div class="indicator-group">
+          <h3>Social Indicators</h3>
+          <ul id="social-list"></ul>
+        </div>
+        <div class="indicator-group">
+          <h3>Technical Indicators</h3>
+          <ul id="tech-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="btn-scan" class="primary">Scan Now</button>
+      <button id="btn-report" class="secondary">Report Malicious</button>
+      <button id="btn-dashboard" class="dashboard-btn"
+        style="margin-top: 8px; width: 100%; grid-column: span 2; background: #0a192f; color: #64ffda; border: 1px solid #233554;">
+        View Full Dashboard
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Source: <span id="scan-source">None</span></p>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
